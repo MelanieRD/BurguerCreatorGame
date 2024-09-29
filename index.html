@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burguer creator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </head>
+  <body onload="docLoad()">
+    <div id="main">
+   
+      <div id="ordersContainer">
+        
+        
+      </div>
+
+      <div id="ih">
+        
+        <audio src="audio/ingredientes.mp3" class="audio" id="audioIngrediente"></audio>
+        <audio src="audio/Order.mp3" class="audio" id="audioOrder"></audio>
+        <audio src="audio/success.mp3" class="audio" id="audioSend"></audio>
+        <audio src="audio/lose.mp3" class="audio" id="audioLose"></audio>
+        <audio src="audio/win.mp3" class="audio" id="audioWin"></audio>
+        <audio src="audio/error.mp3" class="audio" id="audioError"></audio>
+        
+        
+        <section id="instruccions">
+          <h1>Creador de Hamburguesas</h1>
+          <h2>Selecciona la orden, crea y vendelas!</h2>
+          <ul>
+            <li> No dejes juntar 6 ordenes!</li>
+            <li> Ganas al llegar a 1000 puntos :D </li>
+            <li> Cuidado al tener un Score negativo D:</li>
+          </ul>
+          <h3> El orden de los ingredientes importa BASTANTE (>‿◠)✌! </h4>
+        </section>
+       
+        <div>
+          <h3 id="scoreh3"> Score: 0</h3>
+      <div id="burguerContainer">
+        <div>
+          
+          <h4 id="warning"></h4>
+        </div>
+        <!-- <h3 id="points" class="animated">- 0</h3> -->
+        <!-- <h3 id="pointsPositive" class="animated">+ 0</h3> -->
+        <!-- aqui es que se va a dibujar mi burguer -->
+        
+      </div>
+    </div>
+
+      
+      </div>
+      <div id="ingredientesCenter">
+      <div id="ingredientsContainer">
+        <div class="ingredients" id="burguer" onclick="addIngredient(2, 'burguer')">
+          <img src="src/img/burguer/2.png" alt="burguer" />
+        </div>
+        <div class="ingredients" id="queso" onclick="addIngredient(5, 'queso')">
+          <img src="src/img/burguer/5.png" alt="queso" />
+        </div>
+        <div class="ingredients" id="lechuga" onclick="addIngredient(6, 'lechuga')">
+          <img src="src/img/burguer/6.png" alt="lechuga" />
+        </div>
+        <div class="ingredients" id="cebolla" onclick="addIngredient(3, 'cebolla')">
+          <img src="src/img/burguer/3.png" alt="cebolla" />
+        </div>
+        <div class="ingredients" id="tomate" onclick="addIngredient(4,'tomate')">
+          <img src="src/img/burguer/4.png" alt="tomate" />
+        </div>
+        <div class="ingredients" id="panArriba" onclick="addIngredient(1, 'Pan superior')">
+          <img src="src/img/burguer/1.png" alt="panArriba" />
+        </div>
+        <div class="ingredients" id="panAbajo" onclick="addIngredient(7, 'Pan inferior')">
+          <img src="src/img/burguer/7.png" alt="panAbajo" />
+        </div>
+
+        <div class="ingredients" id="send" onclick="sendBurguer()">
+          <button>Send Burguer</button>
+        </div>
+          
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <script src="script/main.js"></script>
+  </body>
+</html>

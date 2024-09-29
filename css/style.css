@@ -1,0 +1,147 @@
+#main {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+}
+#ordersContainer {
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#burguerContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  /* margin-bottom: 20px;
+  margin-left: 20px; */
+  /* margin-right: 25%; */
+}
+
+#ih {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0px;
+  padding-top: 50px;
+  background-color: antiquewhite;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#instruccions {
+  /* margin-left: 350px; */
+  margin-right: 30px;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(38, 216, 240);
+}
+
+#ingredientesCenter {
+  display: flex;
+  justify-content: center;
+}
+
+#ingredientsContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  height: 100px;
+  /* background-color: rgb(18, 189, 189); */
+}
+
+#scoreh3 {
+  display: block;
+}
+
+.ingredients {
+  background-color: azure;
+  margin: auto;
+}
+
+.ingredients img {
+  background-color: azure;
+  float: left;
+  width: 125px;
+  height: 33px;
+}
+
+.addedIngredient {
+  position: absolute;
+}
+
+#ordersContainer {
+  margin-bottom: 100px;
+}
+.order {
+  margin: 10px;
+  width: 200px;
+  height: 302px;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+#warning {
+  margin: 0px;
+  padding: 0px;
+  color: red;
+  font-size: 20px;
+}
+
+#points {
+  margin-top: 10px;
+  padding: 0px;
+  color: red;
+  font-size: 20px;
+  float: right;
+  margin-right: 10%;
+}
+
+.animated {
+  animation-name: puntaje;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes puntaje {
+  from {
+    margin-top: 10px;
+  }
+
+  to {
+    margin-top: 40px;
+  }
+}
+
+#pointsPositive {
+  margin: 10px;
+  padding: 0px;
+  color: green;
+  font-size: 20px;
+  float: right;
+  margin-right: 10%;
+}
+
+/* 
+position en el container
+position en cada elemento (dependiendo del position del parent, posicionar los hijos)
+
+*/
+
+/* 500x300 */
+
+.audio {
+  display: none;
+}
+
+li {
+  font-size: 20px;
+}
